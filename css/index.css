@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+	display: block;
+}
+a{text-decoration: none;}
+.lb-cb,.lb,.lb>ul,.lb>ul>li{	
+	width: 1226px;
+	height: 460px;
+	margin: 0 auto;
+}
+.lb{
+	position: relative;
+	z-index: 0;
+}
+.lb-cb{
+		position: relative;
+		z-index: 0;
+		
+}
+.lb>ul{
+	position: relative;
+}
+.lb>ul>li{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.lb-bottom{
+	position: absolute;
+	/*border: 1px solid black;*/
+	bottom: 26px;
+	z-index: 2;
+	right: 50px;
+	
+}
+.lb-bottom>ul>li{
+	width: 6px;
+	height: 6px;
+	border: 2px solid grey;
+	border-radius: 50%;
+	float: left;
+	margin-right: 12px;
+}
+.lb-btn{
+	/*background: rgba(0,0,0,.2);*/
+    border-radius: 2px;
+    position: absolute;
+    width: 33px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -50px;
+    /*right: 0;*/
+    z-index: 3;
+    text-align: center;
+    color: gray;
+    font-family: "宋体";
+    /*display: none;*/
+}
+.lb-btn-right{
+	right: 0;
+}
+.lb-btn-left{
+	left:234px
+}
+.cb{
+	width: 234px;
+	height: 460px;
+	position: absolute;
+	background-color: rgba(0,0,0,.6);
+	z-index: 4;
+	/*color: white;*/
+	top: 0;
+	left: 0;
+}
+.cb>ul>li>a,.cb>ul>li{
+	color: white;
+	width: 234px;
+	height: 42px;
+	line-height: 42px;
+}
+.cb>ul>li>a>span:first-child{
+	margin-left: 30px;
+	font-size: 12px;
+}
+.cb>ul>li>a>span:last-child{
+	float: right;
+	margin-right: 30px;
+	font-size: 20px;
+	
+  color: rgba(255,255,255,0.4)
+}
+.cb>ul{
+	margin-top:18px ;
+	position: relative;
+}
+.cb>ul>li:hover{
+	background-color: orangered;
+}
+.cb-hover{
+	width:795px;
+	height: 458px;
+	position: absolute;
+	left: 234px;
+	top: -18px;
+	/*background-color: yellow;*/
+	/*border: 1px solid gray;*/
+	box-shadow: 10px,10px,10px,20px,black;
+	z-index: 5;
+	clear: both;
+	display: none;
+}
+.cb>ul>li:hover .cb-hover{
+	display: block;
+}
+.cb-hover>ul{
+    float: left;
+    width: 265px;
+    height:460px ;
+    background-color: white;
+    font-size: 12px;
+}
+.cb-hover>ul>li,.cb-hover>ul>li>a{
+	width: 250px;
+	height:76px;
+	/*outline:1px solid red ;*/
+}
+.cb-hover>ul>li>a>span:first-child{
+	line-height: 77px;
+	margin-left: 20px;
+}
+.cb-hover>ul>li>a:hover{
+	color: orangered;
+}
+.cb-hover>ul>li>a>span:first-child>span,
+.cb-hover>ul>li>a>span:first-child>img{
+	/*display: block;*/
+	vertical-align: middle;
+	margin-left: 10px;
+	/*line-height: 77px;*/
+}
+.shop-hover{
+	width:60px ;
+	height: 25px;
+	text-align: center;
+	border: 1px solid orangered;
+	line-height: 25px;
+	float: right;
+	margin-top: 26.5px;
+	color: orangered;
+	/*vertical-align: middle;*/
+}
+.shop-hover:hover {
+	color: white;
+	background-color: orangered;
+}
